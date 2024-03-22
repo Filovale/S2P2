@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Col, Row, Form } from 'react-bootstrap'
-import fantasy from '../data/fantasy.json'
+import horror from '../data/horror.json'
 import SingleBook from './SingleBook'
 
 const AllTheBooks = () => {
@@ -16,7 +16,7 @@ const AllTheBooks = () => {
         </Col>
       </Row>
       <Row className="mt-3">
-        {fantasy
+        {horror
           .filter((b) => b.title.toLowerCase().includes(searchQuery))
           .map((book) => {
             return (
